@@ -17,13 +17,15 @@ This app has three main types of users:
   > + I can also set and view my profile and view my history of check-ins, ratings, reviews, and redemptions.
   > + I can report inappropriate reviews or spam to the system.
   >
+
   see [detail](customer.md)
-- As a business user,
+- As a business user,r
 
   > + I want to be able to register my local business and select its category.
   > + I can respond to reviews left on my business page and report inappropriate reviews or spam to the system.
   > + I can post promotions to attract more customers.
   >
+
   see [detail](owner.md)
 - As a system admin,
 
@@ -34,4 +36,5 @@ This app has three main types of users:
   > + I can view overall platform statistics, such as total users, check-ins, and redemptions.
   > + I can manage system-wide settings, such as enabling or disabling specific features.
   >
+
   see [detail](admin.md)
