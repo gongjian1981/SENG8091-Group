@@ -2,5 +2,5 @@
 
 This section outlines the key requirements for the system, divided into:
 
-- functional requirements
-- system requirements
+- [functional requirements](functional.md)
+- [system requirements](system.md)
