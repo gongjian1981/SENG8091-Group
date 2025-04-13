@@ -2,7 +2,7 @@
 
 As group 9, we need to develop an app to promote and support local businesses.
 
-## initial hypotheses
+## Initial Hypotheses
 
 We came up with the following ideas after looking at the current situation and thinking about how people behave:
 
@@ -35,4 +35,9 @@ To validate our problem and solution space, we reviewed various sources includin
 * Tools like Yelp and Google Maps exist, but they focus on reviews and navigation, not on local loyalty or rewards.
 * Apps like Ritual focus more on chains and don’t help small businesses enough.
 * There's no localized app tailored specifically for Waterloo.
+
+## Initial Requirements
+
+As small businesses in Waterloo face more competition, many of them feel frustrated. Big stores, online shopping, and food delivery apps are taking most of the customers. Small business owners find it hard to get noticed and keep people coming back. Even though many people want to support local shops, they don’t always know where to go. Right now, there isn’t one simple app or tool that helps people find and return to local businesses easily.
+
 
