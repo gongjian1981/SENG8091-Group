@@ -30,4 +30,8 @@ The resulting [requirements](/requirements) serve as a blueprint for the develop
 
 ### 3. Task Planning
 
+In this period, we create [actionable tasks](/actions) associated with all the requirements, make it feasible to complete the project.
+
 ### 4. Presentation
+
+And finally there's [presentation](/presentation) of this project. It shows what the problem is, our solution, and the steps we will take to solve this problem.
