@@ -43,3 +43,19 @@ Prerequisites: Action 2.
 Frontend:
 
 > Add a `Logout` button on the business user dashboard. When clicked, clear the token from storage and navigate to the login page.
+
+### Requirement 1.3
+
+Business user can fill out business information after login.
+
+#### Action 4:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that takes `businessId`, `businessName`, `description`, `address`, `businessHours`, `contactInfo`, `logoImage`, and `coverImage` as input parameters, and stores the information in the database.
+
+Frontend:
+
+> Create a `Business Profile Setup` form page for newly registered business users to input the above details. When submitted, call the API and display success or error message.
