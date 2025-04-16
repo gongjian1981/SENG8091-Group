@@ -321,3 +321,101 @@ Frontend:
 > Add a `View History` button for users and businesses. On click, display the list of past actions in a modal.
 
 ---
+
+### Requirement 6.1
+
+System admin can view total registered users and list them.
+
+#### Action 21:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that returns the total user count and paginated user list.
+
+Frontend:
+
+> Display the total number of users on the `Dashboard`. Add a `View All` button that loads the full user list in a table.
+
+### Requirement 6.2
+
+System admin can view total businesses and list them.
+
+#### Action 22:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that returns the total number of businesses and paginated business list.
+
+Frontend:
+
+> Display the total number on the `Dashboard` with a `View All` button to load the business list.
+
+### Requirement 6.3
+
+System admin can view the total number of check-ins.
+
+#### Action 23:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that returns the total number of check-ins.
+
+Frontend:
+
+> Display the number in the statistics section on the admin dashboard.
+
+### Requirement 6.4
+
+System admin can view total reviews and list them.
+
+#### Action 24:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that returns total review count and a paginated list of reviews.
+
+Frontend:
+
+> Add a `Reviews` section under `Statistics`. Display total count and allow the list to be browsed.
+
+### Requirement 6.5
+
+System admin can view total active promotions and list them.
+
+#### Action 25:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that returns total active promotions and a paginated promotion list.
+
+Frontend:
+
+> Display total active promotions on the dashboard and link to the list for detailed view.
+
+### Requirement 6.6
+
+System admin can view total redemptions and list them.
+
+#### Action 26:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that returns total redemption count and a paginated list of redemption records.
+
+Frontend:
+
+> Display total redemptions in the `Statistics` section and allow access to the full list via `View All` button.
+
+---
