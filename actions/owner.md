@@ -215,3 +215,19 @@ Prerequisites: Action 13.
 Frontend:
 
 > Show predefined reasons like offensive content, spam, fake review in a dropdown menu. Allow users to select or write a custom reason.
+
+### Requirement 3.5
+
+Business user gets a confirmation message after submitting a report.
+
+#### Action 15:
+
+Prerequisites: Action 14.
+
+Backend:
+
+> Implement an API that takes `userId`, `reviewId`, and `reason`, and stores the report for moderation. Return a success message.
+
+Frontend:
+
+> After submitting a report, display a confirmation popup saying “Your report has been submitted successfully.”
