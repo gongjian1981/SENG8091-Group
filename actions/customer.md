@@ -235,3 +235,37 @@ Frontend:
 > Add `see all` button under the review list in the business profile page, when user click the button, navigate to the rating and review list page.
 
 ---
+
+### Requirement 4.1
+
+Customer can earn points through certain actions (e.g., check-in, rating, review).
+
+#### Action 17:
+
+Prerequisites: None.
+
+Backend:
+
+> Update APIs for check-in (Action 8), rating (Action 12), and review (Action 13) to include logic that assigns a fixed number of points per action type (e.g., 1 point for check-in, 3 for rating, 10 for review). Save points in user reward history and update total points.
+
+Frontend:
+
+> After successful check-in, rating, or review, display a toast message showing points earned. Refresh the total points if the profile tab is open.
+
+### Requirement 4.2
+
+Customer can see how many points they’ve earned immediately after each action.
+
+#### Action 18:
+
+Prerequisites: Action 17.
+
+Backend:
+
+> Modify the response of check-in, rating, and review APIs to include the number of points just earned and total updated points.
+
+Frontend:
+
+> Display a short success message (e.g., "You earned 3 points!") right after the action completes, along with updated total points in the profile tab if visible.
+
+---
