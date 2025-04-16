@@ -203,3 +203,15 @@ Prerequisites: Action 11.
 Frontend:
 
 > Add a `Report` button next to each review on the business profile page. When clicked, show a report reason selection dialog.
+
+### Requirement 3.4
+
+Business user can select the reason for the report.
+
+#### Action 14:
+
+Prerequisites: Action 13.
+
+Frontend:
+
+> Show predefined reasons like offensive content, spam, fake review in a dropdown menu. Allow users to select or write a custom reason.
