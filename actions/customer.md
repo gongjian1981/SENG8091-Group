@@ -269,3 +269,97 @@ Frontend:
 > Display a short success message (e.g., "You earned 3 points!") right after the action completes, along with updated total points in the profile tab if visible.
 
 ---
+
+### Requirement 5.1
+
+Customer can see a list of redeemable offers with point requirements, and search by keywords.
+
+#### Action 19:
+
+Prerequisites: None.
+
+Backend:
+
+> Implement an API that returns a list of redeemable deals with fields: `dealId`, `title`, `description`, `pointsRequired`, `validUntil`, `businessId`. Support optional keyword query.
+
+Frontend:
+
+> Create a `Deals` tab accessible from the main menu. Display deals in a scrollable list with search input on top. Call the API and display deals with required points and brief info.
+
+### Requirement 5.2
+
+Customer can see redeemable offers of a business on its profile page.
+
+#### Action 20:
+
+Prerequisites: Action 6.
+
+Backend:
+
+> Implement an API that takes `businessId` and returns its available deals.
+
+Frontend:
+
+> In the business profile page, create a `Promotions` section listing all redeemable offers. Display each deal's title, description, and required points.
+
+### Requirement 5.3
+
+A login page will be displayed if customer is not logged in when trying to redeem a reward.
+
+#### Action 21:
+
+Prerequisites: Action 19.
+
+Frontend:
+
+> When user clicks the `Redeem` button on a deal and is not logged in, navigate to the login page before allowing redemption.
+
+### Requirement 5.4
+
+Customer cannot redeem a reward if they don’t have enough points.
+
+#### Action 22:
+
+Prerequisites: Action 21.
+
+Backend:
+
+> In the redeem API, check if user’s total points are sufficient for the selected deal. If not, return an error message.
+
+Frontend:
+
+> When API returns failure due to insufficient points, display an alert message like “Not enough points to redeem this offer.”
+
+### Requirement 5.5
+
+Customer receives a unique code or QR code after redemption.
+
+#### Action 23:
+
+Prerequisites: Action 22.
+
+Backend:
+
+> When a deal is redeemed, generate a unique redemption code or QR and save it in redemption history. Return it in the API response.
+
+Frontend:
+
+> After successful redemption, show the code or QR in a confirmation screen. Allow user to save or screenshot it.
+
+### Requirement 5.6
+
+Customer can see redemption history on the profile page.
+
+#### Action 24:
+
+Prerequisites: Action 23.
+
+Backend:
+
+> Implement an API that returns a list of redeemed deals by user, with fields: `dealTitle`, `redeemedOn`, `code`, and `businessName`.
+
+Frontend:
+
+> Add a `My redemptions` button in the profile tab. When clicked, fetch and display the redemption history in a list format.
+
+---
