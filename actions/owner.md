@@ -125,3 +125,19 @@ Backend:
 Frontend:
 
 > Display a list of promotions with `Edit` and `Delete` buttons. When `Edit` is clicked, show a pre-filled form. When `Delete` is clicked, show a confirmation dialog before calling the delete API.
+
+### Requirement 2.3
+
+Business user can view how many times each promotion has been redeemed.
+
+#### Action 9:
+
+Prerequisites: Action 7.
+
+Backend:
+
+> Implement an API that returns a list of promotions for the business, including each `promotionId`, `title`, and `redeemedCount`.
+
+Frontend:
+
+> On the promotions page, display a `Redeemed` counter next to each promotion using the data fetched from the API.
