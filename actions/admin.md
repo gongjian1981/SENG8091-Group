@@ -419,3 +419,51 @@ Frontend:
 > Display total redemptions in the `Statistics` section and allow access to the full list via `View All` button.
 
 ---
+
+### Requirement 7.1
+
+System admin can enable or disable specific features.
+
+#### Action 27:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API to update feature flags for modules like `referrals`, `check-in rewards`, and `review visibility`.
+
+Frontend:
+
+> Create a `Feature Flags` section in the settings page with toggle switches. Call the API on change to save settings.
+
+### Requirement 7.2
+
+System admin can manage app-wide reward settings.
+
+#### Action 28:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API to update reward rules such as `pointsPerCheckIn` and `pointsPerReview`.
+
+Frontend:
+
+> Add fields for reward values in the `System Settings` page. On submit, call the API to save.
+
+### Requirement 7.3
+
+System admin can update global app settings like terms, contact email, or banner message.
+
+#### Action 29:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that updates global `termsOfUse`, `contactEmail`, and `bannerMessage`.
+
+Frontend:
+
+> Add an `App Settings` form in the `System Settings` page. When saved, call the API and confirm with a success message.
