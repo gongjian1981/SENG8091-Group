@@ -409,3 +409,117 @@ Frontend:
 > Add a `Logout` button in the profile tab. When clicked, clear local auth token, reset user state, and navigate back to the login screen.
 
 ---
+
+### Requirement 7.1
+
+Customer’s personal info (name, email, profile image) will be displayed on the profile page after login.
+
+#### Action 28:
+
+Prerequisites: Action 26.
+
+Backend:
+
+> Implement an API that returns current user’s profile data.
+
+Frontend:
+
+> After login, call the API and display user info in the top section of the profile tab.
+
+### Requirement 7.2
+
+Customer can edit their profile info on the profile page.
+
+#### Action 29:
+
+Prerequisites: Action 28.
+
+Backend:
+
+> Implement an API to update `name` and `profileImage` for the logged-in user.
+
+Frontend:
+
+> Add an `Edit` button on the profile tab. When clicked, open editable fields and a submit button. On submit, call the update API and refresh info.
+
+### Requirement 7.3
+
+Customer can change their password by clicking the 'edit password' button.
+
+#### Action 30:
+
+Prerequisites: Action 28.
+
+Backend:
+
+> Implement an API that takes `currentPassword` and `newPassword`, verifies the current password, and updates the new one.
+
+Frontend:
+
+> Add an `Edit password` button in profile tab. On click, open modal to enter current and new password. On submit, call API and show success or error message.
+
+### Requirement 7.4
+
+Customer can see total reward points on profile page.
+
+#### Action 31:
+
+Prerequisites: Action 28.
+
+Backend:
+
+> Use the same API as in Action 17 to return total reward points.
+
+Frontend:
+
+> Display total reward points under personal information in the profile tab.
+
+### Requirement 7.5
+
+Customer can see list of check-ins on profile page.
+
+#### Action 32:
+
+Prerequisites: Action 28.
+
+Backend:
+
+> Implement an API that returns user’s check-in history with business names and dates.
+
+Frontend:
+
+> Add a `My check-ins` button in the profile tab. When clicked, call the API and display results in a scrollable list.
+
+### Requirement 7.6
+
+Customer can see list of all reviews they wrote.
+
+#### Action 33:
+
+Prerequisites: Action 28.
+
+Backend:
+
+> Implement an API that returns list of all reviews written by the user with business name, review content, and date.
+
+Frontend:
+
+> Add a `My reviews` button in the profile tab. When clicked, call the API and display all reviews in a list view.
+
+### Requirement 7.7
+
+Customer can see list of all redemptions they made.
+
+#### Action 34:
+
+Prerequisites: Action 24.
+
+Backend:
+
+> Use the API from Action 24 to get redemption history.
+
+Frontend:
+
+> Add a `My redemptions` button in the profile tab. On click, show the list of previous redemptions.
+
+---
