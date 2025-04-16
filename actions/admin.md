@@ -177,3 +177,81 @@ Frontend:
 > Add search and filter fields to the `Pending Businesses` page. When used, send filter parameters to the API and display the results.
 
 ---
+
+### Requirement 4.1
+
+System admin can view all reported reviews or content.
+
+#### Action 12:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that returns a list of reported content including `reportId`, `reviewId`, `reason`, `reporterId`, and timestamp.
+
+Frontend:
+
+> Add a `Reports` section in the admin panel. Fetch and display reported reviews in a table.
+
+### Requirement 4.2
+
+System admin can see the report reason, reporter, and timestamp.
+
+#### Action 13:
+
+Prerequisites: Action 12.
+
+Frontend:
+
+> In the `Reports` section, show columns for report reason, reporter, and report time using the data from the API.
+
+### Requirement 4.3
+
+System admin can mark a report as valid or dismiss it.
+
+#### Action 14:
+
+Prerequisites: Action 13.
+
+Backend:
+
+> Implement an API that takes `reportId` and marks the report as `valid` or `dismissed`.
+
+Frontend:
+
+> Add `Mark as Valid` and `Dismiss` buttons for each report entry. On click, call the API and update the report status in the UI.
+
+### Requirement 4.4
+
+System admin can delete the reported review or content.
+
+#### Action 15:
+
+Prerequisites: Action 14.
+
+Backend:
+
+> Implement an API that deletes the targeted review or content by `reviewId`.
+
+Frontend:
+
+> Add a `Delete Content` button for each reported item. On click, call the API and remove the item from the UI list.
+
+### Requirement 4.5
+
+System admin can send a warning or notice to the user who posted inappropriate content.
+
+#### Action 16:
+
+Prerequisites: Action 14.
+
+Backend:
+
+> Implement an API that sends a notification or warning to the `userId` of the reported content.
+
+Frontend:
+
+> Add a `Send Warning` button for each report. On click, open a text field for the warning message. On submit, call the API and confirm success.
+
+---
