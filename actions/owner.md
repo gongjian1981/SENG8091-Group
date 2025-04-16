@@ -75,3 +75,21 @@ Backend:
 Frontend:
 
 > Add a category dropdown to the `Business Profile Setup` form. Fetch the categories from the API and display the list to the user for selection.
+
+### Requirement 1.5
+
+Business user can edit business information later on the business profile page.
+
+#### Action 6:
+
+Prerequisites: Action 4.
+
+Backend:
+
+> Implement an API that allows updating `businessName`, `description`, `address`, `businessHours`, `contactInfo`, `logoImage`, `coverImage`, and `categoryId` for the selected `businessId`.
+
+Frontend:
+
+> Add an `Edit` button to the business profile page. When clicked, load the current data into an editable form. On submit, call the API to save changes and refresh the profile page.
+
+---
