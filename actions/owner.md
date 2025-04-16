@@ -59,3 +59,19 @@ Backend:
 Frontend:
 
 > Create a `Business Profile Setup` form page for newly registered business users to input the above details. When submitted, call the API and display success or error message.
+
+### Requirement 1.4
+
+Business user can select a category for their business from a predefined list.
+
+#### Action 5:
+
+Prerequisites: None.
+
+Backend:
+
+> Implement an API that returns a predefined list of business categories with `categoryId` and `categoryName`.
+
+Frontend:
+
+> Add a category dropdown to the `Business Profile Setup` form. Fetch the categories from the API and display the list to the user for selection.
