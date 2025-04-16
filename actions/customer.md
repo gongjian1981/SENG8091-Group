@@ -523,3 +523,43 @@ Frontend:
 > Add a `My redemptions` button in the profile tab. On click, show the list of previous redemptions.
 
 ---
+
+### Requirement 8.1
+
+Customer can click the “Report” button on each review.
+
+#### Action 35:
+
+Prerequisites: Action 15.
+
+Frontend:
+
+> Add a `Report` button next to each review on business profile page. When clicked, open a dialog for reporting.
+
+### Requirement 8.2
+
+Customer can select type of report reason (e.g., offensive, spam, fake).
+
+#### Action 36:
+
+Prerequisites: Action 35.
+
+Frontend:
+
+> In the report dialog, add a dropdown with predefined reasons like offensive, spam, fake, or “Other”. Allow user to enter custom reason if “Other” is selected.
+
+### Requirement 8.3
+
+Customer gets a confirmation after report is submitted.
+
+#### Action 37:
+
+Prerequisites: Action 36.
+
+Backend:
+
+> Implement an API that takes `userId`, `reviewId`, and `reason`, and saves the report for moderation.
+
+Frontend:
+
+> On form submit, call the API and show a toast or popup confirming successful submission.
