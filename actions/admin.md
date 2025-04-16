@@ -111,3 +111,69 @@ Frontend:
 > Add a `Delete` button for each category. On click, confirm deletion and call the API. Show a success or failure message based on API response.
 
 ---
+
+### Requirement 3.1
+
+System admin can view a list of pending business registration requests.
+
+#### Action 8:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement an API that returns all business registrations with status `pending`, along with their submitted information.
+
+Frontend:
+
+> Create a `Pending Businesses` section in the admin dashboard. Fetch the list from the API and display it in a table.
+
+### Requirement 3.2
+
+System admin can approve a business.
+
+#### Action 9:
+
+Prerequisites: Action 8.
+
+Backend:
+
+> Implement an API that updates a business status from `pending` to `approved` and makes it visible on the platform.
+
+Frontend:
+
+> Add an `Approve` button next to each pending business. On click, call the API and update the UI list.
+
+### Requirement 3.3
+
+System admin can reject a business with an optional reason.
+
+#### Action 10:
+
+Prerequisites: Action 8.
+
+Backend:
+
+> Implement an API that sets a business status to `rejected` and saves an optional rejection reason.
+
+Frontend:
+
+> Add a `Reject` button for pending businesses. When clicked, open a text field for rejection reason. On submit, call the API and refresh the list.
+
+### Requirement 3.4
+
+System admin can search and filter business registration requests.
+
+#### Action 11:
+
+Prerequisites: Action 8.
+
+Backend:
+
+> Extend the pending business API to support query parameters: `name`, `categoryId`, `submissionDate`.
+
+Frontend:
+
+> Add search and filter fields to the `Pending Businesses` page. When used, send filter parameters to the API and display the results.
+
+---
