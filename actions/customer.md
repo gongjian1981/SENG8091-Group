@@ -137,3 +137,101 @@ Frontend:
 Customers cannot check in at the same business again within a 24-hour window.
 
 ---
+
+### Requirement 3.1
+
+A login page will be displayed if customer is not logged in when he/her tries to rate or review.
+
+#### Action 10:
+
+Prerequisites: None.
+
+Frontend:
+
+> Add a `rating` button in the business profile page.
+
+#### Action 11:
+
+Prerequisites: Action 10.
+
+Frontend:
+
+> Detect if user is in logged in status when user click `rating` button, if not, navigate to the login page.
+
+### Requirement 3.2
+
+Customer can rate a business through a 1–5 star rating system.
+
+#### Action 12:
+
+Prerequisites: Action 11.
+
+Backend:
+
+> Implement an API that takes `businessId` and `userId` and `rating` as input parameters, save to the database, and return the new average rating of the business.
+
+Frontend:
+
+> After user click the `rating` button. display a modal with 5 outlined stars in a line, user can click certain star and the star and all previous stars will automatically be filled in.
+>
+> Add a submit button under the stars, when user click the button, call the API, and refresh the rating value with the API's result.
+
+### Requirement 3.3
+
+When customer rates a business, there is an optional text input field where customer can write a review.
+
+#### Action 13:
+
+Prerequisites: Action 12.
+
+Backend:
+
+> Implement an API that takes `businessId` and `userId` and `rating` and `review` as input parameters, save to the database, and return the new average rating of the business and the new list of its reviews.
+
+Frontend:
+
+> Add an input text field under the stars, upon the submit button, when user click the button with the review field left empty, call the API in Action 12; otherwise, call the new API and refresh the rating value and review list with the API's result.
+
+### Requirement 3.4
+
+If customer hasn’t written a review yet, he/her can add one later by clicking my rating.
+
+#### Action 14:
+
+Prerequisites: Action 11.
+
+Backend:
+
+> Implement an API that takes `businessId` and `userId` and `review` as input parameters, update the database, and return the new list of its reviews.
+
+Frontend:
+
+> Add an input text field under the stars, upon the submit button, when user click the button with the text-field left empty, call the API in Action 12; otherwise, call the new API and refresh the rating value and review list with the API's result.
+
+---
+
+### Requirement 3.5
+
+Customer can see all the ratings and reviews and average rating on business profile page.
+
+#### Action 15:
+
+Prerequisites: None.
+
+Backend:
+
+> Implement an API that takes `businessId` as input parameters, return the list of its rating with reviews.
+
+Frontend:
+
+> Create a new window, which call the API and show the list of ratings and reviews for the business.
+
+#### Action 16:
+
+Prerequisites: Action 6, Action 15.
+
+Frontend:
+
+> Add `see all` button under the review list in the business profile page, when user click the button, navigate to the rating and review list page.
+
+---
