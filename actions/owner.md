@@ -109,3 +109,19 @@ Backend:
 Frontend:
 
 > Add a `Create Promotion` button on the promotions page. When clicked, open a form for entering the promotion details. On submit, call the API and display a success or error message.
+
+### Requirement 2.2
+
+Business user can edit or delete an existing promotion.
+
+#### Action 8:
+
+Prerequisites: Action 7.
+
+Backend:
+
+> Implement an API to update or delete a promotion using `promotionId` and `businessId`. For updates, allow changes to all fields except `promotionId`.
+
+Frontend:
+
+> Display a list of promotions with `Edit` and `Delete` buttons. When `Edit` is clicked, show a pre-filled form. When `Delete` is clicked, show a confirmation dialog before calling the delete API.
