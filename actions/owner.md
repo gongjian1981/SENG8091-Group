@@ -175,3 +175,19 @@ Backend:
 Frontend:
 
 > Add a `Reviews` tab on the business profile page to display reviews fetched from the API in a list format.
+
+### Requirement 3.2
+
+Business user can reply to a review.
+
+#### Action 12:
+
+Prerequisites: Action 11.
+
+Backend:
+
+> Implement an API that takes `reviewId`, `businessId`, `userId` (owner), and `responseText` as input. Save the response linked to the review in the database.
+
+Frontend:
+
+> Add a `Reply` button below each review. When clicked, show a text field and submit button. On submit, call the API and display the response under the review.
