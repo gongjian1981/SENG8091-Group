@@ -255,3 +255,69 @@ Frontend:
 > Add a `Send Warning` button for each report. On click, open a text field for the warning message. On submit, call the API and confirm success.
 
 ---
+
+### Requirement 5.1
+
+System admin can search for and view user or business accounts.
+
+#### Action 17:
+
+Prerequisites: Action 2.
+
+Backend:
+
+> Implement APIs to search for users and businesses by `name`, `email`, or `businessId`.
+
+Frontend:
+
+> Add a search bar in the `User Management` and `Business Management` sections. When searching, call the API and display matching results.
+
+### Requirement 5.2
+
+System admin can suspend or delete a user account.
+
+#### Action 18:
+
+Prerequisites: Action 17.
+
+Backend:
+
+> Implement an API to change user status to `suspended` or `deleted` based on `userId`.
+
+Frontend:
+
+> Add `Suspend` and `Delete` buttons on the user account page. On click, call the API and refresh the status in the UI.
+
+### Requirement 5.3
+
+System admin can suspend or unpublish a business listing.
+
+#### Action 19:
+
+Prerequisites: Action 17.
+
+Backend:
+
+> Implement an API to set business status to `suspended` or `unpublished` using `businessId`.
+
+Frontend:
+
+> Add `Suspend` and `Unpublish` buttons for each business listing. Call the API when clicked and update the status label in the UI.
+
+### Requirement 5.4
+
+System admin can view reasons for previous suspensions or deletions.
+
+#### Action 20:
+
+Prerequisites: Action 17.
+
+Backend:
+
+> Implement an API that returns the `actionHistory` log for a user or business, including timestamps and reasons for each status change.
+
+Frontend:
+
+> Add a `View History` button for users and businesses. On click, display the list of past actions in a modal.
+
+---
