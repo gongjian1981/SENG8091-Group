@@ -141,3 +141,21 @@ Backend:
 Frontend:
 
 > On the promotions page, display a `Redeemed` counter next to each promotion using the data fetched from the API.
+
+### Requirement 2.4
+
+Business user can pause or resume a promotion.
+
+#### Action 10:
+
+Prerequisites: Action 7.
+
+Backend:
+
+> Implement an API that allows updating a promotion's status field (`active` or `paused`) using `promotionId`.
+
+Frontend:
+
+> Add `Pause` and `Resume` toggle buttons next
+
+---
