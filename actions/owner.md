@@ -191,3 +191,15 @@ Backend:
 Frontend:
 
 > Add a `Reply` button below each review. When clicked, show a text field and submit button. On submit, call the API and display the response under the review.
+
+### Requirement 3.3
+
+Business user can click the “Report” button on a review.
+
+#### Action 13:
+
+Prerequisites: Action 11.
+
+Frontend:
+
+> Add a `Report` button next to each review on the business profile page. When clicked, show a report reason selection dialog.
