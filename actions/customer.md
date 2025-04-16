@@ -103,3 +103,37 @@ Frontend:
 > When user click the business name on a pop-out business pin mark, navigate user to the business profile page.
 
 ---
+
+### Requirement 2.1
+
+Customer can check-in only when GPS confirms I am within certain meters (e.g., 50 meters) of the business.
+
+#### Action 8:
+
+Prerequisites: None.
+
+Backend:
+
+> Implement an API that takes `businessId` and `location` as input parameters, if the location is with specified range of the business, and the user hasn't checked in within the last 24 hours, record the check-in action and return true, otherwise return false with reason.
+
+Frontend:
+
+> Add a `check-in` button in the business profile page, and when user click the button call the API.
+
+### Requirement 2.2
+
+Customer can see the result of his check-in.
+
+#### Action 9:
+
+Prerequisites: Action 8.
+
+Frontend:
+
+> When API return true, show a success message, and disable the `check-in` button, and when API return false, show a failure message explaining why.
+
+### Requirement 2.3
+
+Customers cannot check in at the same business again within a 24-hour window.
+
+---
