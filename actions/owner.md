@@ -93,3 +93,19 @@ Frontend:
 > Add an `Edit` button to the business profile page. When clicked, load the current data into an editable form. On submit, call the API to save changes and refresh the profile page.
 
 ---
+
+### Requirement 2.1
+
+Business user can create a promotion.
+
+#### Action 7:
+
+Prerequisites: Action 4.
+
+Backend:
+
+> Implement an API that takes `businessId`, `title`, `description`, `image`, `pointsRequired`, `startDate`, and `endDate` as input, and saves the promotion to the database.
+
+Frontend:
+
+> Add a `Create Promotion` button on the promotions page. When clicked, open a form for entering the promotion details. On submit, call the API and display a success or error message.
