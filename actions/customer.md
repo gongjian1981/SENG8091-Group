@@ -363,3 +363,49 @@ Frontend:
 > Add a `My redemptions` button in the profile tab. When clicked, fetch and display the redemption history in a list format.
 
 ---
+
+### Requirement 6.1
+
+Customer can register with their email and set a password.
+
+#### Action 25:
+
+Prerequisites: None.
+
+Backend:
+
+> Implement a registration API that takes `email`, `password`, `name`, and optional `profileImage`, validates input, creates user account, and returns auth token.
+
+Frontend:
+
+> Add a `Register` page with input fields for email, name, password, and profile picture upload. On submit, call the API and navigate to the main app view on success.
+
+### Requirement 6.2
+
+Customer can log in with their email and password.
+
+#### Action 26:
+
+Prerequisites: None.
+
+Backend:
+
+> Implement a login API that takes `email` and `password`, validates credentials, and returns an auth token if successful.
+
+Frontend:
+
+> Add a `Login` page with email and password fields. On success, save the auth token and navigate to the main view.
+
+### Requirement 6.3
+
+Customer can log out from the profile page.
+
+#### Action 27:
+
+Prerequisites: Action 26.
+
+Frontend:
+
+> Add a `Logout` button in the profile tab. When clicked, clear local auth token, reset user state, and navigate back to the login screen.
+
+---
