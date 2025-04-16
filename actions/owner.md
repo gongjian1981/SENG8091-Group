@@ -159,3 +159,19 @@ Frontend:
 > Add `Pause` and `Resume` toggle buttons next
 
 ---
+
+### Requirement 3.1
+
+Business user can view all ratings and reviews left on their business profile.
+
+#### Action 11:
+
+Prerequisites: Action 4.
+
+Backend:
+
+> Implement an API that takes `businessId` and returns all associated reviews along with rating, reviewer name, review content, and date.
+
+Frontend:
+
+> Add a `Reviews` tab on the business profile page to display reviews fetched from the API in a list format.
